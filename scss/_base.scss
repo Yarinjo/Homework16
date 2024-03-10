@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    pad: 0;
+}
+a {
+    text-decoration: none;
+}
+
+html {
+    font-family: "Work Sans", sans-serif;
+    font-size: 1px;
+    @include tablet {
+        font-size: 0.9px;
+    }
+    @include mobile {
+        font-size: 0.8px;
+    }
+}
+
+body {
+    font-size: 16rem;
+}
+
+.container {
+    max-width: 1210px;
+    padding: 0 20px;
+    margin-inline: auto;
+}
+
+.btn {
+    display: inline-block;
+    cursor: pointer;
+    border: 0;
+    font-family: var(--ff);
+    border-radius: 50rem;
+}

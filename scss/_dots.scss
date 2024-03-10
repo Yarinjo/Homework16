@@ -1,0 +1,26 @@
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+    background: red;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    color: inherit;
+    border: none;
+    padding: 0 !important;
+    font: inherit;
+}
+
+.owl-dots {
+    display: flex;
+    align-items: center;
+    margin-inline: auto;
+    gap: 10px;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+}
+
+.owl-carousel .owl-dot.active {
+    background: blue;
+}

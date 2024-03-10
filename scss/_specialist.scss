@@ -1,0 +1,86 @@
+.specialist {
+    margin-top: 111px;
+    margin-bottom: 130px;
+    h3 {
+        font-family: var(--ff);
+        font-weight: 700;
+        font-size: 48px;
+        color: #262626;
+        text-align: center;
+    }
+    &__desc {
+        font-family: var(--ff);
+        font-weight: 400;
+        font-size: 16px;
+        text-align: center;
+        color: #262626;
+
+        margin-top: 70px;
+        max-width: 847px;
+        margin-inline: auto;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 27px;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+        margin-top: 123px;
+
+        @include mobile-xs {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+
+    &__list-card {
+        display: flex;
+        flex-direction: column;
+        background: #f9f1fe;
+        border-radius: 20px;
+        padding: 44px 38px 33px 39px;
+        
+    }
+
+    &__list-card-topSection {
+        display: flex;
+        gap: 13px;
+        margin-bottom: 25px;
+    }
+
+    &__name {
+        font-family: var(--ff);
+        font-weight: 600;
+        font-size: 20px;
+        color: #262626;
+        span {
+            font-family: var(--ff);
+            font-weight: 400;
+            font-size: 16px;
+            color: #575757;
+        }
+    }
+
+    &__specialization {
+    }
+
+    &__list-card-description {
+    }
+
+    &__button {
+        background: #8842f0;
+        border-radius: 50px;
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 20px;
+        color: #f9f1fe;
+
+        padding: 11px 49px;
+        margin-top: 28px;
+    }
+}
+.btn {
+}
