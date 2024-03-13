@@ -96,7 +96,7 @@
   transform: scale(1.1);
 }
 
-  .header__links-links::before {
+  .header__links-links:hover::before {
     content: '';
     display: block;
     width: 70%;
@@ -109,3 +109,18 @@
     transition: 0.2 all ease-in-out;
     background: #8842F0;
   }
+
+ /* .actual-link::before {
+    content: '';
+    display: block;
+    width: 70%;
+    transform: translateX(20%);
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 1px;
+    -webkit-transition: 0.2 all ease-in-out;
+    transition: 0.2 all ease-in-out;
+    background: #8842F0;
+  } 
+  */
