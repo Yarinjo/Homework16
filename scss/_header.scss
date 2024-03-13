@@ -34,6 +34,7 @@
             font-weight: 400;
             font-size: 16px;
             color: #000;
+            
             @include mobile-xs {
                 font-size: 12px;;
             }
@@ -62,6 +63,7 @@
 .header {
 
     &__links-links {
+        
     }
 }
 
@@ -75,3 +77,35 @@
 .header__search-button {
     background: #000;
 }
+
+/*.header__links-links:hover::before {
+    content: '';
+    display: block;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 1px;
+    -webkit-transition: 0.2 all ease-in-out;
+    transition: 0.2 all ease-in-out;
+    background: #8842F0;
+  }
+  */
+
+.header__links-links:hover {
+  transform: scale(1.1);
+}
+
+  .header__links-links::before {
+    content: '';
+    display: block;
+    width: 70%;
+    transform: translateX(20%);
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 1px;
+    -webkit-transition: 0.2 all ease-in-out;
+    transition: 0.2 all ease-in-out;
+    background: #8842F0;
+  }

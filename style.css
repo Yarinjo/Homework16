@@ -46,6 +46,23 @@ body {
   border-radius: 50rem;
 }
 
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  display: inline-block;
+}
+
+.span_green {
+  color: green;
+}
+
+.button__p {
+  color: aqua;
+}
+
 .join {
   border-radius: 10px;
   fill: #1c1b1f;
@@ -217,6 +234,39 @@ body {
   background: #000;
 }
 
+/*.header__links-links:hover::before {
+    content: '';
+    display: block;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 1px;
+    -webkit-transition: 0.2 all ease-in-out;
+    transition: 0.2 all ease-in-out;
+    background: #8842F0;
+  }
+  */
+.header__links-links:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.header__links-links::before {
+  content: '';
+  display: block;
+  width: 70%;
+  -webkit-transform: translateX(20%);
+          transform: translateX(20%);
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  height: 1px;
+  -webkit-transition: 0.2 all ease-in-out;
+  transition: 0.2 all ease-in-out;
+  background: #8842F0;
+}
+
 .services {
   margin-top: 111px;
 }
@@ -271,6 +321,23 @@ body {
   background: #f9f1fe;
   border-radius: 15px;
   padding: 46px 26px;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+}
+.services__info-block:hover {
+  color: #fff;
+  background: #8842f0;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+.services__info-block:hover p {
+  color: #fff;
+}
+.services__info-block:hover a {
+  color: #fff;
+}
+.services__info-block:hover .arrow {
+  color: #fff;
 }
 .services__info-block-title {
   font-family: var(--ff);
@@ -279,6 +346,8 @@ body {
   color: #262626;
   margin-top: 27px;
   margin-bottom: 17px;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
 }
 .services__info-block-desc {
   font-family: var(--ff);
@@ -287,6 +356,8 @@ body {
   color: #575757;
   text-align: center;
   margin-bottom: 17px;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
 }
 .services a {
   font-family: var(--font-family);
@@ -295,6 +366,12 @@ body {
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #8842f0;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+}
+
+.arrow {
+  margin-left: 6px;
 }
 
 .specialist {
@@ -349,6 +426,11 @@ body {
   background: #f9f1fe;
   border-radius: 20px;
   padding: 44px 38px 33px 39px;
+}
+@media screen and (max-width: 592px) {
+  .specialist__list-card {
+    padding: 34px 18px 23px 19px;
+  }
 }
 .specialist__list-card-topSection {
   display: -webkit-box;

@@ -39,6 +39,23 @@
         background: #f9f1fe;
         border-radius: 15px;
         padding: 46px 26px;
+
+        transition: 0.2s all ease-in-out;
+
+        &:hover {
+            color: #fff;
+            background: #8842f0;
+            transform: scale(1.02);
+        }
+        &:hover p {
+            color: #fff;
+        }
+        &:hover a {
+            color: #fff;
+        }
+        &:hover .arrow {
+            color: #fff;
+        }
     }
 
     &__info-block-title {
@@ -49,6 +66,7 @@
 
         margin-top: 27px;
         margin-bottom: 17px;
+        transition: 0.2s all ease-in-out;
     }
 
     &__info-block-desc {
@@ -60,7 +78,7 @@
 
         margin-bottom: 17px;
 
-
+        transition: 0.2s all ease-in-out;
     }
     a {
         font-family: var(--font-family);
@@ -69,5 +87,17 @@
         text-decoration: underline;
         text-decoration-skip-ink: none;
         color: #8842f0;
+
+        transition: 0.2s all ease-in-out;
     }
+}
+
+
+//.services__link::after {
+//    content: url("img/arrow.svg");
+//}
+
+.arrow {
+    margin-left: 6px;
+    //transition: 0.2s all ease-in-out;
 }

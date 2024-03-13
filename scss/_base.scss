@@ -35,3 +35,19 @@ body {
     font-family: var(--ff);
     border-radius: 50rem;
 }
+svg {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    display: inline-block;
+}
+
+
+.span_green {
+    color: green;
+}
+.button__p {
+    color: aqua;
+}
