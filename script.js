@@ -58,3 +58,31 @@ console.log(divForMail);
 mainForm.addEventListener('submit', function(event) {
   console.log('Form is sending ...');
 })
+
+
+
+
+function navToggle() {
+  document.getElementById('header__navID').classList.toggle('is-active');
+}
+function navRemove() {
+  document.getElementById('header__navID').classList.remove('is-active');
+}
+function navAdd() {
+  document.getElementById('header__navID').classList.add('is-active');
+}
+
+
+const myUL = document.getElementById('header__navID');
+console.log(myUL)
+
+const menu = document.querySelector('.menu')
+document.addEventListener('click', (e) => {
+  const click = e.composedPath().includes(myUL);
+  const menus = e.composedPath().includes(menu);
+  console.log(!click, menus, myUL.classList == 'is-active');
+  if (!click && !menus && myUL.classList == 'is-active') {
+    navToggle();
+  }
+  }
+);

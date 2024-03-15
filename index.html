@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="owl/owl.carousel.min.css">
     <link rel="stylesheet" href="owl/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Quiro Diagnostic Center</title>
@@ -16,16 +17,25 @@
 <body>
     <header class="header container">
         <div class="header__main-link"><a href="/">Quiro Diagnostic Center</a></div>
-        <div class="header__links">
-            <a class="header__links-links actual-link" href="/">Home</a>
-            <a class="header__links-links" href="/">Service</a>
-            <a class="header__links-links" href="/">Doctors</a>
-            <a class="header__links-links" href="/">Gallery</a>
-            <a class="header__links-links" href="/">Contact</a>
-        </div>
+            <ul class="header__nav" id="header__navID">
+                <li><a data-goto=".header" class="header__links-links actual-link" href="/">Home</a></li>
+                <li><a data-goto=".services" class="header__links-links" href="/">Service</a></li>
+                <li><a data-goto=".specialist" class="header__links-links" href="/">Doctors</a></li>
+                <li><a data-goto=".owl" class="header__links-links" href="/">Gallery</a></li>
+                <li><a data-goto=".footer" class="header__links-links" href="/">Contact</a></li>
+                <span onclick="navToggle()" class="material-symbols-outlined close is-active">
+                    close
+                    </span>
+        </ul>
         <div class="header__search">
             <input class="header__search-input" type="text" placeholder="Search Here">
             <button class="btn header__search-button"><img src="img/search.svg" alt="Search"></button>
+        </div>
+        <div class="header__menu">
+            <span onclick="navToggle()" class="material-symbols-outlined menu">
+            menu
+            </span>
+            </label>
         </div>
     </header>
     
