@@ -80,7 +80,7 @@ const menu = document.querySelector('.menu')
 document.addEventListener('click', (e) => {
   const click = e.composedPath().includes(myUL);
   const menus = e.composedPath().includes(menu);
-  console.log(!click, menus, myUL.classList == 'is-active');
+  console.log(!click, !menus, myUL.classList == 'is-active');
   if (!click && !menus) {
     navRemove();
   }
